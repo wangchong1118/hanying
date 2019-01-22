@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+/*
+ * Reset */
+*,html{
+	margin:0;
+	padding:0;
+}
+body{
+	background: #E6E7E8;
+}
+body,div,span,p,i,b,img,a,ul,ol,li,dl,dt,dd,table,th,tr,td,h1,h2,h3,h4,h5,h6,form,input,label,button,textarea,select{
+	font: 14px/1.5 Microsoft YaHei,tahoma,arial,sans-serif;
+	word-wrap: break-word;
+	color: #3e4145;
+}
+ul,ol,li,dl,dt,dd{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	cursor: pointer;
+}
+a:hover{
+	color:#FF2C55;
+	text-decoration:none;
+}
+img{
+	width: 100%;
+	border: 0 none;
+	vertical-align: middle;
+}
+button,input,select,textarea,button{
+	outline: none;
+	border: 0 none;
+}
+h1{
+	font-size: 18px;
+}
+h2{
+	font-size: 16px;
+}
+h3{
+	font-size: 15px;
+}
+h4,h5,h6{
+	font-size: 100%;
+}
+
+/*
+ * common */
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.fb{
+	font-weight: bold;
+}
+.pos-r{
+	position: relative;
+}
+.color-primary{
+	color: #FF2C55;
+}
+.color-black{
+	color: #000000;
+}
+.tal{
+	text-align: left;
+}
+.tac{
+	text-align: center;
+}
+.tar{
+	text-align: right;
+}
+.dblock{
+	display: block;
+}
+.dhiden{
+	display: none;
+}
+.mg-top-4{
+	margin-top: 4px;
+}
+.clear{
+	zoom:1;
+}
+.clear:after {
+	content: "";
+	display: block;
+	height: 0;
+	visibility:hidden;
+	clear:both;
+}
+
+/*
+ * layout */
+.mw{
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.logo{
+    display: block;
+    width: 160px;
+    height: 36px;
+    background: url('../img/logo.png') left top no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+/*
+ * unit: block */
+.block .header{
+	float: left;
+	height: 36px;
+	width: 100%;
+	float: left;
+	overflow: hidden;
+    background: white;
+    padding: 0 15px;
+    box-sizing: border-box;
+	border-bottom: 1px solid #FF2C55;
+}
+.block .header h3{
+	float: left;
+	display: block;
+	width: auto;
+	line-height: 36px;
+	color: #FF2C55;
+	font-weight: bold;
+}
+.block .header a{
+	float: right;
+	line-height: 44px;
+	color: #FF2C55;
+}
+.block .header a:hover{
+	text-decoration: underline;
+}
+.block .body{
+	float: left;
+	background: white;
+    overflow: hidden;
+}
+.block .body .arc .title{
+	float: left;
+	width: 100%;
+	line-height: 36px;
+	text-align: center;
+	color: #3e4145;
+	font-size: 16px;
+	font-weight: bold;
+}
+.block .body .arc .para{
+	float: left;
+	width: 100%;
+	line-height: 24px;
+	text-indent: 20px;
+	padding-top: 10px;
+}
+
+/*
+ * unit: button */
+.btn{
+	display: block;
+	padding: 0 15px;
+	height: 28px;
+	line-height: 28px; 
+	text-align: center;
+	font-size: 13px;
+	border-radius: 14px;
+}
+.btn-border-gray{
+	border: 1px solid #3e4145;
+	color: #3e4145;
+}
+.btn-border-pramiry,.btn-border-gray:hover{
+	border: 1px solid #FF2C55;
+	color: #FF2C55;
+}
+.btn-pure-pramiry,.btn-border-pramiry:hover{
+	background: #FF2C55;
+	color: white;
+}
+
+/*
+ * unit: pagination */
+.pagination{
+	float: left;
+	width: 100%;
+	height: 28px;
+	padding: 15px 0;
+	text-align: center;
+	margin-top: 30px;
+	background: white;
+	overflow: hidden;
+}
+.pagination a{
+	display: inline-block;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 10px;
+	border: 1px solid #A0A0A0;
+	border-radius: 3px;
+	margin: 0 2px;
+	color: #A0A0A0;
+}
+.pagination a:hover{
+	border: 1px solid #FF2C55;
+	color: #FF2C55;
+}
+.pagination a.cur{
+	border: 1px solid #FF2C55;
+	background: #FF2C55;
+	color: white;
+}

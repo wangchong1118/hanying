@@ -1,0 +1,564 @@
+@charset "utf-8";
+
+/* *
+ * ===============================================================================================
+ * page: index 
+ * ===============================================================================================
+ */
+/* *
+ * section: banner 
+ */
+/* banner: img */
+.banner {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0 0 3px 3px rgb(197, 180, 165);
+}
+.banner img {
+    width: 100%;
+}
+.banner .logo-wrapper{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-left: -550px;
+    height: 36px;
+}
+
+/* banner: topbar */
+.topbar,.topbar .mask,.topbar .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+}
+.topbar .mask {
+    background: #130c0e;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.topbar .content {
+    width: 1100px;
+    left: 50%;
+    margin-left: -550px;
+}
+.topbar .content p,.topbar .content a {
+    line-height: 42px;
+    color: white;
+}
+.topbar .content a:hover {
+    color: #FF2C55;
+}
+
+/* banner: swiper icon list */
+.swiper-icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.swiper-icon li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 32px;
+    margin: 0 4px;
+    border: 1px solid #FF2C55;
+    cursor: pointer;
+    transition: .4s;
+}
+.swiper-icon li:hover,.swiper-icon li.active {
+    background: #FF2C55;
+    width: 28px;
+}
+
+/* *
+ * section: navbar 
+ */
+.nav {
+    height: 28px;
+    overflow: hidden;
+    margin-top: 36px;
+}
+.nav li {
+    display: inline-block;
+    margin: 0;
+}
+.nav li a {
+    display: block;
+    height: 28px;
+    padding: 0 15px;
+    line-height: 28px;
+    font-size: 15px;
+    border-radius: 14px;
+}
+.nav li:hover a,.nav li.active a {
+    background: #FF2C55;
+    color: white;
+}
+
+/* *
+ * section: main show 
+ */
+.main-show {
+    margin-top: 40px;
+}
+.list-star {
+    float: left;
+    width: 383px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.list-star .body li{
+    float: left;
+    height: 68px;
+    border-top: 1px dashed #C0C0C0;
+    padding: 15px 0;
+    margin: 0 15px;
+    margin-top: -1px;
+    overflow: hidden;
+}
+.list-star .body li img{
+    float: left;
+    width: 68px;
+    height: 68px;
+    margin-right: 15px;
+    border-radius: 6px;
+}
+.list-star .body li .title{
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #130c0e;
+}
+.list-star .body li .title:hover{
+    color: #FF2C55;
+}
+.list-star .body li .desc{
+    float: left;
+    width: 250px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 13px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+.first-beststar{
+    float: right;
+    width: 680px;
+    overflow: hidden;
+}
+.first-beststar .body img{
+    float: right;
+    width: 100%;
+}
+.first-beststar .body .arc{
+    float: left;
+    width: 650px;
+    height: 235px;
+    padding: 15px;
+    overflow: hidden;
+}
+.first-beststar .body .btn{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+/* *
+ * section: tv show 
+ */
+.tv-show .block{
+    width: 530px;
+    margin-top: 40px;
+}
+.tv-show .block .body{
+    float: left;
+    width: 500px;
+    padding: 15px;
+    overflow: hidden;
+}
+.tv-show .block .body ul{
+    float: left;
+    width: 510px;
+    overflow: hidden;
+}
+.tv-show .block .body li{
+    float: left;
+    width: 160px;
+    height: 265px;
+    margin: 5px 10px 5px 0;
+}
+.tv-show .block .body li a{
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.tv-show .block .body li a span{
+    line-height: 42px;
+    display: block;
+    height: 36px;
+}
+.tv-show .block .body li:hover{
+    box-shadow: 0 0 3px 3px #B7B7B7;
+}
+.tv-show .block .body li:hover span{
+    color: #FF2C55;
+}
+
+/* *
+ * section: arcticle show 
+ */
+.tv-show .list-arc .body ul{
+    width: 500px;
+}
+.tv-show .list-arc .body li{
+    float: left;
+    width: 100%;
+    height: 28px;
+    padding: 5px 0;
+    margin:  0;
+    margin-top: -1px;
+    border-top: 1px dashed #E0E0E0;
+}
+.tv-show .list-arc .body li:hover{
+    box-shadow: none;
+}
+.tv-show .list-arc .body li a{
+    width: auto;
+    line-height: 28px;
+}
+
+/* *
+ * ===============================================================================================
+ * page: video list
+ * ===============================================================================================
+ */
+.page-list .body ul{
+    width: 720px;
+    overflow: hidden;
+}
+.page-list .body li{
+    float: left;
+    width: 120px;
+    height: 209px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 18px;
+    padding: 5px;
+    border: 1px solid #E0E0E0;
+}
+.page-list .body li a{
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+.page-list .body li a span{
+    line-height: 36px;
+    display: block;
+    height: 36px;
+}
+.page-list .body li:hover{
+    padding: 4px;
+    border: 2px solid #FF2C55;
+}
+.page-list .body li:hover span{
+    color: #FF2C55;
+    font-weight: bold;
+}
+
+/* *
+ * ===============================================================================================
+ * page: video detail
+ * ===============================================================================================
+ */
+.detail-header{
+    float: left;
+    width: 700px;
+    border-bottom:  1px dashed #E0E0E0;
+    overflow: hidden;
+}
+.detail-header .detail-vedio{
+    width: 480px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 10px 0 25px;
+}
+.detail-header .detail-vedio img{
+    float: left;
+    width: 141px;
+    height: 204px;
+    overflow: hidden;
+    margin-right: 19px;
+}
+.detail-header .detail-vedio h3{
+    float: right;
+    width: 320px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #FF2C55;
+}
+.detail-header .detail-vedio ul{
+    float: right;
+    width: 320px;
+    height: 168px;
+    overflow: hidden;
+}
+.detail-header .detail-vedio li{
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.detail-body{
+    float: left;
+    width: 670px;
+    padding: 20px 15px;
+    overflow: hidden;
+}
+.detail-body p{
+    line-height: 24px;
+    font-size: 14px;
+    text-align: justify;
+    text-indent: 24px;
+    padding-top: 10px;
+}
+
+/* *
+ * ===============================================================================================
+ * page layout: arcticle list
+ * ===============================================================================================
+ */
+.list-arcticle{
+    float: left;
+    width: 323px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.list-arcticle .body li{
+    float: left;
+    width: 293px;
+    padding: 15px 0;
+    margin:  0 15px;
+    border-top: 1px dashed #E0E0E0;
+    margin-top: -1px;
+    overflow: hidden;
+}
+.list-arcticle .body li.first{
+    height: 176px;
+}
+.list-arcticle .body li.first a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.list-arcticle .body li.first a img{
+    transition: all 0.5s;
+}
+.list-arcticle .body li.first span{
+    display: block;
+    width: 263px;
+    height: 40px;
+    padding: 10px 15px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.76);
+    color: white;
+    line-height: 20px;
+    overflow: hidden;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.list-arcticle .body li.first a:hover img{
+    transform: scale(1.4);
+    transition: all 0.5s;
+}
+.arcticle-list.page-body .body{
+    width: 700px;
+    padding: 0 15px;
+}
+.arcticle-list .body li{
+    float: left;
+    width: 100%;
+    height: 84px;
+    overflow: hidden;
+    padding: 15px 0;
+    margin-top: -1px;
+    border-top: 1px dashed #E0E0E0;
+}
+.arcticle-list .body li img{
+    float: left;
+    width: 140px;
+    height: 84px;
+    margin-right: 15px;
+}
+.arcticle-list .body li h3{
+    float: left;
+    width: 545px;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.arcticle-list .body li p{
+    float: left;
+    width: 545px;
+    height: 40px;
+    line-height: 20px;
+    font-size: 12px;
+    color: #919293;
+    overflow: hidden
+}
+
+/* *
+ * ===============================================================================================
+ * page: arcticle detail
+ * ===============================================================================================
+ */
+.detail-arcticle .arcticle-header h3{
+    float: left;
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 15px;
+    text-align: center;
+    overflow: hidden;
+    color: #130c0e;
+}
+.detail-arcticle .arcticle-header ul{
+    float: left;
+    width: 100%;
+    height: 24px;
+    text-align: center;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.detail-arcticle .arcticle-header li{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 12px;
+}
+.detail-body .detail-summary{
+    float: left;
+    width: 630px;
+    overflow: hidden;
+    background: #EAEBEC;
+    padding: 10px 20px;
+    line-height: 24px;
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+
+/* *
+ * ===============================================================================================
+ * page: about
+ * ===============================================================================================
+ */
+.page-about.page-body{
+    width: 1100px;
+}
+.page-about.page-body .body{
+    padding: 40px;
+    padding-top: 0;
+}
+.page-about .detail-header{
+    width: 1020px;
+}
+.page-about .detail-arcticle .arcticle-header h3{
+    text-align: left;
+}
+.page-about .detail-body{
+    padding: 0;
+    width: 80%;
+}
+.page-about .detail-body img.qcode{
+    width: 180px;
+    height: 180px;
+}
+/* *
+ * ===============================================================================================
+ * common page layout: body
+ * ===============================================================================================
+ */
+.nav-c{
+    height: 36px;
+}
+.list-aside{
+    width: 323px;
+}
+.list-aside .body li .desc{
+    width: 210px;
+}
+.page-body{
+    float: right;
+    width: 730px;
+    overflow: hidden;
+}
+.page-body .body{
+    padding: 15px;
+}
+/* *
+ * ===============================================================================================
+ * common page layout: bottom
+ * ===============================================================================================
+ */
+.page-bottom{
+    width: 100%;
+    height: 88px;
+    margin-top: 68px;
+    padding: 28px 0 16px;
+    background: #1d2a33;
+}
+.page-bottom .wrapper{
+    width: 480px;
+    height: 100%;
+    margin: 0 auto;
+}
+.page-bottom .wrapper img{
+    float: left;
+    width: 88px;
+    height: 88px;
+    margin-right: 16px;
+}
+.page-bottom .wrapper .cont{
+    float: left;
+    width: 370px;
+    height: 88px;
+    overflow: hidden;
+}
+.page-bottom .wrapper .cont h3{
+    line-height: 36px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+.page-bottom .wrapper .cont span{
+    float: left;
+    width: 100%;
+    height: 24px;
+    line-break: 24px;
+    font-size: 13px;
+    color: white;
+}
